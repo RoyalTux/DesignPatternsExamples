@@ -2,7 +2,7 @@
 {
     public class AdapterExample
     {
-        public void TestAdapterExample()
+        public void TestAdapter()
         {
             var turkey = new WildTurkey();
             var adapter = new TurkeyAdapter(turkey);
