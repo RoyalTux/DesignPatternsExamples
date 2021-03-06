@@ -2,6 +2,7 @@
 using DesignPatternsExamples.ChainOfResponsibility.Classes;
 using DesignPatternsExamples.Command.Classes;
 using DesignPatternsExamples.Facade.Classes;
+using DesignPatternsExamples.Factory.Abstract_Factory.Classes;
 using System;
 
 namespace DesignPatternsExamples
@@ -27,6 +28,13 @@ namespace DesignPatternsExamples
 
             FacadeExample testFacade = new FacadeExample();
             testFacade.TestFacade();
+
+            Console.WriteLine("**********");
+
+            Furniture testAbstractFactory = new Furniture();
+            testAbstractFactory.TestFurniture();
+
+            Console.WriteLine("**********");
         }
     }
 }
