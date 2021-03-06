@@ -1,5 +1,6 @@
 ﻿using DesignPatternsExamples.Adapter.Classes;
 using DesignPatternsExamples.ChainOfResponsibility.Classes;
+using DesignPatternsExamples.Command.Classes;
 using System;
 
 namespace DesignPatternsExamples
@@ -15,6 +16,11 @@ namespace DesignPatternsExamples
 
             ChainOfResponsibilityExample testChainOfResponsibility = new ChainOfResponsibilityExample();
             testChainOfResponsibility.TestChainOfResponsibility();
+
+            Console.WriteLine("**********");
+
+            Secretary testCommand = new Secretary();
+            testCommand.PrintDocument();
         }
     }
 }

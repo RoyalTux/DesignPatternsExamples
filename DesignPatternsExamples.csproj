@@ -6,10 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ChainOfResponsibility\Interfaces\" />
     <Folder Include="Factory\" />
     <Folder Include="Facade\" />
-    <Folder Include="Command\" />
     <Folder Include="State\" />
     <Folder Include="Repository\" />
   </ItemGroup>
