@@ -1,6 +1,7 @@
 ﻿using DesignPatternsExamples.Adapter.Classes;
 using DesignPatternsExamples.ChainOfResponsibility.Classes;
 using DesignPatternsExamples.Command.Classes;
+using DesignPatternsExamples.Facade.Classes;
 using System;
 
 namespace DesignPatternsExamples
@@ -21,6 +22,11 @@ namespace DesignPatternsExamples
 
             Secretary testCommand = new Secretary();
             testCommand.PrintDocument();
+
+            Console.WriteLine("**********");
+
+            FacadeExample testFacade = new FacadeExample();
+            testFacade.TestFacade();
         }
     }
 }
