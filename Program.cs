@@ -3,6 +3,7 @@ using DesignPatternsExamples.ChainOfResponsibility.Classes;
 using DesignPatternsExamples.Command.Classes;
 using DesignPatternsExamples.Facade.Classes;
 using DesignPatternsExamples.Factory.Abstract_Factory.Classes;
+using DesignPatternsExamples.Factory.Factory_Method.Classes;
 using System;
 
 namespace DesignPatternsExamples
@@ -35,6 +36,9 @@ namespace DesignPatternsExamples
             testAbstractFactory.TestFurniture();
 
             Console.WriteLine("**********");
+
+            FactoryMethodExample testFactoryMethod = new FactoryMethodExample();
+            testFactoryMethod.TestFactoryMethod();
         }
     }
 }
