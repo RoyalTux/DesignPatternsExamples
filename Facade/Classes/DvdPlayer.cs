@@ -6,6 +6,7 @@ namespace DesignPatternsExamples.Facade.Classes
     {
         private Dvd _dvd;
         private int _time = 0;
+
         public void On() => Console.WriteLine("DVD Player powered on");
 
         public void Insert(Dvd dvd)

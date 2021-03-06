@@ -16,32 +16,32 @@ namespace DesignPatternsExamples
             AdapterExample testAdapter = new AdapterExample();
             testAdapter.TestAdapter();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             ChainOfResponsibilityExample testChainOfResponsibility = new ChainOfResponsibilityExample();
             testChainOfResponsibility.TestChainOfResponsibility();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             Secretary testCommand = new Secretary();
             testCommand.PrintDocument();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             FacadeExample testFacade = new FacadeExample();
             testFacade.TestFacade();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             Furniture testAbstractFactory = new Furniture();
             testAbstractFactory.TestFurniture();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             FactoryMethodExample testFactoryMethod = new FactoryMethodExample();
             testFactoryMethod.TestFactoryMethod();
 
-            Console.WriteLine("\n**********");
+            Console.WriteLine("\n**********\n");
 
             OrderState OrderState = new OrderState();
             OrderState.Register();

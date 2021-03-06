@@ -1,5 +1,4 @@
 ﻿using DesignPatternsExamples.Command.Interfaaces;
-using System;
 
 namespace DesignPatternsExamples.Command.Classes
 {
@@ -20,6 +19,7 @@ namespace DesignPatternsExamples.Command.Classes
 
             Command = new LaserPrintCommand();
             Command.ExecutePrint(Document);
+
             return;
         }
     }
