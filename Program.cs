@@ -1,4 +1,4 @@
-﻿using System;
+﻿using DesignPatternsExamples.Adapter.Classes;
 
 namespace DesignPatternsExamples
 {
@@ -6,7 +6,8 @@ namespace DesignPatternsExamples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AdapterExample testAdapter = new AdapterExample();
+            testAdapter.TestAdapterExample();
         }
     }
 }
