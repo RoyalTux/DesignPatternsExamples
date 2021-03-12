@@ -2,6 +2,6 @@
 {
     public interface IDelivery
     {
-        string DeliveryType();
+        string GetDeliveryType();
     }
 }

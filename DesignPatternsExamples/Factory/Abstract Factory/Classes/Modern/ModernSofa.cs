@@ -6,9 +6,9 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
     {
         public string Name => "Modern sofa";
 
-        public string Purpose()
+        public string GetPurpose(string description)
         {
-            return "To lay";
+            return description;
         }
     }
 }

@@ -6,9 +6,9 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian
     {
         public string Name => "Victorian armchair";
 
-        public string Purpose()
+        public string GetPurpose(int numbersOfHandles)
         {
-            return "To sit";
+            return "To sit and hold " + numbersOfHandles.ToString() + " handles";
         }
     }
 }

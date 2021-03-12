@@ -6,7 +6,7 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
     {
         public string Name => "Modern table";
 
-        public string Purpose()
+        public string GetPurpose()
         {
             return "To put";
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2PuOC7S/m+93mRw1s6pZwHbL5cV7e5e9sp/dAR4xvzAV9/edICVVNoHx6+bAaIhUctdJImSUdAn83dTPDcqS7w==",
+  "dgSpecHash": "dzU2Skb3YD8ZrPyFqhJW/866X3xEI4zfM/qyGA1aLJdVYURC8vcnjhgmbh+4POiIS2FyN7KV5/0PqQDpSFlTwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\d.shchebetovskyi\\source\\repos\\DesignPatterns\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
+  "projectFilePath": "C:\\Users\\d.shchebetovskyi\\Desktop\\DesignPatternsExamples-master\\DesignPatternsExamples-master\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\d.shchebetovskyi\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\d.shchebetovskyi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

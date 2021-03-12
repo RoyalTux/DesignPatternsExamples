@@ -4,12 +4,12 @@ namespace DesignPatternsExamples.Factory.Factory_Method.Classes
 {
     public abstract class Creator
     {
-        public abstract IDelivery FactoryMethod();
+        public abstract IDelivery CreateDelivery();
 
-        public string SomeOperation()
+        public string CreateDeliveryAndGetName()
         {
-            var delivery = FactoryMethod();
-            var result = "Created delivery type:  " + delivery.DeliveryType();
+            IDelivery delivery = CreateDelivery();
+            var result = "Created delivery type:  " + delivery.GetDeliveryType();
 
             return result;
         }

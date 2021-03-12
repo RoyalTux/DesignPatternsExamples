@@ -1,22 +1,29 @@
-﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
+﻿using DesignPatternsExamples.Factory.Abstract_Factory.Enums;
+using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
 namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian
 {
     public class VictorianFurniture : IFurniture
     {
-        public IArmchair CreateArmchair()
+        private readonly FurnitureType _furnitureType;
+
+        public VictorianFurniture(FurnitureType furnitureType)
         {
-            return new VictorianArmchair();
+            _furnitureType = furnitureType;
         }
 
-        public ISofa CreateSofa()
+        public IBaseProduct Create()
         {
-            return new VictorianSofa();
-        }
-
-        public ITable CreateTable()
-        {
-            return new VictorianTable();
+            switch (_furnitureType)
+            {
+                case FurnitureType.Armchair:
+                    return new VictorianArmchair();
+                case FurnitureType.Sofa:
+                    return new VictorianSofa();
+                default:
+                    case FurnitureType.Table:
+                        return new VictorianTable();
+            }
         }
     }
 }

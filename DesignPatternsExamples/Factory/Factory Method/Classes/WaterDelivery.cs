@@ -4,7 +4,7 @@ namespace DesignPatternsExamples.Factory.Factory_Method.Classes
 {
     public class WaterDelivery : IDelivery
     {
-        public string DeliveryType()
+        public string GetDeliveryType()
         {
             return "Will deliver by water";
         }

@@ -6,9 +6,9 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Default
     {
         public string Name => "Default sofa";
 
-        public string Purpose(string description)
+        public string GetPurpose(string description)
         {
-            return "To lay";
+            return "To lay with comforts: " + description;
         }
     }
 }

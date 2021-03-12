@@ -4,7 +4,7 @@ namespace DesignPatternsExamples.Factory.Factory_Method.Classes
 {
     public class LandDeliveryCreator : Creator
     {
-        public override IDelivery FactoryMethod()
+        public override IDelivery CreateDelivery()
         {
             return new LandDelivery();
         }

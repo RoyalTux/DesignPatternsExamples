@@ -1,22 +1,29 @@
-﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
+﻿using DesignPatternsExamples.Factory.Abstract_Factory.Enums;
+using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
 namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
 {
     public class ModernFurniture : IFurniture
     {
-        public IArmchair CreateArmchair()
+        private readonly FurnitureType _furnitureType;
+
+        public ModernFurniture(FurnitureType furnitureType)
         {
-            return new ModernArmchair();
+            _furnitureType = furnitureType;
         }
 
-        public ISofa CreateSofa()
+        public IBaseProduct Create()
         {
-            return new ModernSofa();
-        }
-
-        public ITable CreateTable()
-        {
-            return new ModernTable();
+            switch (_furnitureType)
+            {
+                case FurnitureType.Armchair:
+                    return new ModernArmchair();
+                case FurnitureType.Sofa:
+                    return new ModernSofa();
+                default:
+                    case FurnitureType.Table:
+                        return new ModernTable();
+            }
         }
     }
 }

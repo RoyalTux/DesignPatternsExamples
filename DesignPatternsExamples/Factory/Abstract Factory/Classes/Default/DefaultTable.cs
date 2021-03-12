@@ -6,7 +6,7 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Default
     {
         public string Name => "Default table";
 
-        public string Purpose()
+        public string GetPurpose()
         {
             return "To put";
         }

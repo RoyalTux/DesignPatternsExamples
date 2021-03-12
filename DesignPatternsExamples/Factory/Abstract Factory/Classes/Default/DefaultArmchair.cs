@@ -6,9 +6,9 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Default
     {
         public string Name => "Default armchair";
 
-        public string Purpose(int numbersOfHandles)
+        public string GetPurpose(int numbersOfHandles)
         {
-            return "To sit";
+            return "To sit and hold " + numbersOfHandles.ToString() + " handles";
         }
     }
 }

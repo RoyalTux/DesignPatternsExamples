@@ -6,7 +6,7 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian
     {
         public string Name => "Victorian table";
 
-        public string Purpose()
+        public string GetPurpose()
         {
             return "To put";
         }

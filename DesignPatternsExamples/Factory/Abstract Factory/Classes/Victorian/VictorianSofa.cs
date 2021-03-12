@@ -6,9 +6,9 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian
     {
         public string Name => "Victorian sofa";
 
-        public string Purpose()
+        public string GetPurpose(string description)
         {
-            return "To lay";
+            return description;
         }
     }
 }

@@ -17,7 +17,7 @@ namespace DesignPatternsExamples.Factory.Factory_Method.Classes
 
         public void ClientCode(Creator creator)
         {
-            Console.WriteLine("Client: I don't know the creator class, but it still works.\n" + creator.SomeOperation());
+            Console.WriteLine("Client: I don't know the creator class, but it still works.\n" + creator.CreateDeliveryAndGetName());
         }
     }
 }

@@ -637,17 +637,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\d.shchebetovskyi\\.nuget\\packages\\": {}
+    "C:\\Users\\d.shchebetovskyi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d.shchebetovskyi\\source\\repos\\DesignPatterns\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
+      "projectUniqueName": "C:\\Users\\d.shchebetovskyi\\Desktop\\DesignPatternsExamples-master\\DesignPatternsExamples-master\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
       "projectName": "GenericRepositoryExample",
-      "projectPath": "C:\\Users\\d.shchebetovskyi\\source\\repos\\DesignPatterns\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
+      "projectPath": "C:\\Users\\d.shchebetovskyi\\Desktop\\DesignPatternsExamples-master\\DesignPatternsExamples-master\\GenericRepositoryExample\\GenericRepositoryExample.csproj",
       "packagesPath": "C:\\Users\\d.shchebetovskyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d.shchebetovskyi\\source\\repos\\DesignPatterns\\GenericRepositoryExample\\obj\\",
+      "outputPath": "C:\\Users\\d.shchebetovskyi\\Desktop\\DesignPatternsExamples-master\\DesignPatternsExamples-master\\GenericRepositoryExample\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\d.shchebetovskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -661,7 +665,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -673,7 +676,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MongoDB.Driver": {
             "target": "Package",
@@ -702,7 +704,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

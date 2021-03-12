@@ -2,6 +2,6 @@
 {
     public interface ITable : IBaseProduct
     {
-        string Purpose();
+        string GetPurpose();
     }
 }
