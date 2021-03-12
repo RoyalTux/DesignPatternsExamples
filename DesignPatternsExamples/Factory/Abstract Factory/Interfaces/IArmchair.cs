@@ -2,6 +2,6 @@
 {
     public interface IArmchair : IBaseProduct
     {
-        string Purpose();
+        string Purpose(int numbersOfHandles);
     }
 }

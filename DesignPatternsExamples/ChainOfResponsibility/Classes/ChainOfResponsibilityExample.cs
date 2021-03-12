@@ -4,12 +4,9 @@
     {
         public void TestChainOfResponsibility()
         {
-            Approver kirill = new Director();
-            Approver petya = new VicePresident();
-            Approver vasya = new President();
-
-            kirill.SetSuccessor(petya);
-            petya.SetSuccessor(vasya);
+            Approver vasya = new President(null);
+            Approver petya = new VicePresident(vasya);
+            Approver kirill = new Director(petya);
 
             var purchase = new Purchase(2034, 350.00, "Project X");
             kirill.ProcessRequest(purchase);

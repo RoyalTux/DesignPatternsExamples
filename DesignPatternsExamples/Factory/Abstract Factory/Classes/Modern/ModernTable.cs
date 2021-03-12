@@ -1,10 +1,10 @@
 ﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
-namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
+namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
 {
-    public class DefaultTable : ITable
+    public class ModernTable : ITable
     {
-        public string Name => "Default table";
+        public string Name => "Modern table";
 
         public string Purpose()
         {

@@ -2,11 +2,13 @@
 {
     public abstract class Approver
     {
-        protected Approver Successor;
+        protected readonly Approver Successor;
+        protected readonly string Position;
 
-        public void SetSuccessor(Approver successor)
+        public Approver(Approver approver, string position)
         {
-            Successor = successor;
+            Successor = approver;
+            Position = position;
         }
 
         public abstract void ProcessRequest(Purchase purchase);

@@ -4,6 +4,11 @@ namespace DesignPatternsExamples.ChainOfResponsibility.Classes
 {
     public class President : Approver
     {
+        public President(Approver approver) : base(approver, "President")
+        {
+
+        }
+
         public override void ProcessRequest(Purchase purchase)
         {
             if (purchase.Amount < 100000.0)

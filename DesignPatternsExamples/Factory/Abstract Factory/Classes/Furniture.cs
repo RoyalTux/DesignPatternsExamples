@@ -1,4 +1,7 @@
-﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
+﻿using DesignPatternsExamples.Factory.Abstract_Factory.Classes.Default;
+using DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern;
+using DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian;
+using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 using System;
 
 namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
@@ -24,14 +27,14 @@ namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
 
         public void PrintFurniture(IFurniture furniture)
         {
-            Console.WriteLine(furniture.CreateArmchair().Name.ToString());
-            Console.WriteLine(furniture.CreateArmchair().Purpose());
+            Console.WriteLine(furniture.Create().Name);
+            Console.WriteLine(((IArmchair)furniture.Create()).Purpose(10));
             Console.WriteLine();
-            Console.WriteLine(furniture.CreateTable().Name.ToString());
-            Console.WriteLine(furniture.CreateTable().Purpose());
+            Console.WriteLine(furniture.Create().Name);
+            Console.WriteLine(((ITable)furniture.Create()).Purpose());
             Console.WriteLine();
-            Console.WriteLine(furniture.CreateSofa().Name.ToString());
-            Console.WriteLine(furniture.CreateSofa().Purpose());
+            Console.WriteLine(furniture.Create().Name);
+            Console.WriteLine(((ISofa)furniture.Create()).Purpose("additional description"));
             Console.WriteLine();
         }
     }

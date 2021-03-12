@@ -4,6 +4,11 @@ namespace DesignPatternsExamples.ChainOfResponsibility.Classes
 {
     public class VicePresident : Approver
     {
+        public VicePresident(Approver approver) : base(approver, "VicePresident")
+        {
+
+        }
+
         public override void ProcessRequest(Purchase purchase)
         {
             if (purchase.Amount < 25000.0)
@@ -12,7 +17,7 @@ namespace DesignPatternsExamples.ChainOfResponsibility.Classes
             }
             else
             {
-                Successor?.ProcessRequest(purchase);
+                Successor.ProcessRequest(purchase);
             }
         }
     }

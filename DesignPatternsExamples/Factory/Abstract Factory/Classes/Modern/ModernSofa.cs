@@ -1,10 +1,10 @@
 ﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
-namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
+namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
 {
-    public class VictorianSofa : ISofa
+    public class ModernSofa : ISofa
     {
-        public string Name => "Victorian sofa";
+        public string Name => "Modern sofa";
 
         public string Purpose()
         {

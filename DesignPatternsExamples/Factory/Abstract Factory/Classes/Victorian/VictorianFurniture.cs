@@ -1,22 +1,22 @@
 ﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
-namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
+namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Victorian
 {
-    public class DefaultFurniture : IFurniture
+    public class VictorianFurniture : IFurniture
     {
         public IArmchair CreateArmchair()
         {
-            return new DefaultArmchair();
+            return new VictorianArmchair();
         }
 
         public ISofa CreateSofa()
         {
-            return new DefaultSofa();
+            return new VictorianSofa();
         }
 
         public ITable CreateTable()
         {
-            return new DefaultTable();
+            return new VictorianTable();
         }
     }
 }

@@ -2,10 +2,6 @@
 {
     public interface IFurniture
     {
-        IArmchair CreateArmchair();
-
-        ITable CreateTable();
-
-        ISofa CreateSofa();
+        IBaseProduct Create();
     }
 }

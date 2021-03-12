@@ -2,6 +2,6 @@
 {
     public interface ISofa : IBaseProduct
     {
-        string Purpose();
+        string Purpose(string description);
     }
 }

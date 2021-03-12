@@ -1,10 +1,10 @@
 ﻿using DesignPatternsExamples.Factory.Abstract_Factory.Interfaces;
 
-namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes
+namespace DesignPatternsExamples.Factory.Abstract_Factory.Classes.Modern
 {
-    public class VictorianArmchair : IArmchair
+    public class ModernArmchair : IArmchair
     {
-        public string Name => "Victorian armchair";
+        public string Name => "Modern armchair";
 
         public string Purpose()
         {
