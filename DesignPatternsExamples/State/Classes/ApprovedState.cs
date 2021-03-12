@@ -5,11 +5,11 @@ namespace DesignPatternsExamples.State.Classes
 {
     public class ApprovedState : IOrderState
     {
-        private readonly OrderState _Parent;
+        private readonly OrderState _orderState;
 
-        public ApprovedState(OrderState OrderState)
+        public ApprovedState(OrderState orderState)
         {
-            _Parent = OrderState;
+            _orderState = orderState;
             Approve();
         }
 
@@ -20,7 +20,7 @@ namespace DesignPatternsExamples.State.Classes
 
         public void Dispatch()
         {
-            _Parent._CurrentState = new DispatchedState(_Parent);
+            _orderState.currentState = new DispatchedState(_orderState);
         }
 
         public void Register()

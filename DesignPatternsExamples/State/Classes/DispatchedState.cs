@@ -5,16 +5,16 @@ namespace DesignPatternsExamples.State.Classes
 {
     public class DispatchedState : IOrderState
     {
-        private readonly OrderState _Parent;
+        private readonly OrderState _orderState;
 
         public void NewOrderPlaced()
         {
             throw new Exception("OrderState has already been placed!");
         }
 
-        public DispatchedState(OrderState OrderState)
+        public DispatchedState(OrderState orderState)
         {
-            _Parent = OrderState;
+            _orderState = orderState;
             Dispatch();
         }
 
@@ -30,7 +30,7 @@ namespace DesignPatternsExamples.State.Classes
 
         public void Approve()
         {
-            _Parent._CurrentState = new ApprovedState(_Parent);
+            _orderState.currentState = new ApprovedState(_orderState);
         }
     }
 }

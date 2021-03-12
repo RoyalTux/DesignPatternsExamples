@@ -4,26 +4,26 @@ namespace DesignPatternsExamples.State.Classes
 {
     public class OrderState
     {
-        public IOrderState _CurrentState;
+        public IOrderState currentState;
 
         public OrderState()
         {
-            _CurrentState = new NewOrder(this);
+            currentState = new NewOrder(this);
         }
 
         public void Dispatch()
         {
-            _CurrentState.Dispatch();
+            currentState.Dispatch();
         }
 
         public void Register()
         {
-            _CurrentState.Register();
+            currentState.Register();
         }
 
         public void Approve()
         {
-            _CurrentState.Approve();
+            currentState.Approve();
         }
     }
 }
